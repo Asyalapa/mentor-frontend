@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --slate-900: #1F314F;
+  --slate-500: #68778D;
+  --slate-300: #D5E1EF;
+  --white-color: #FFFFFF;
+  --font-family: 'Outfit', sans-serif;
+  --font-size-primary: calc(22 / 16 * 1rem);
+  --font-size-secondary: calc(15 / 16 * 1rem);
+  --line-height-primary: 1.2;
+  --line-height-secondary: 1.4;
+  --letter-spacing-secondary: calc(0.2 / 16 * 1rem);
+  --padding-large: calc(40 / 16 * 1rem);
+  --padding-medium: calc(28 / 16 * 1rem);
+  --padding-small: calc(16 / 16 * 1rem);
+  --border-radius-large: calc(20 / 16 * 1rem);
+  --border-radius-small: calc(10 / 16 * 1rem);
+  --xs-width: 320px;
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  font-family: var(--font-family);
+  background-color: var(--slate-300);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding-medium);
+  padding: var(--padding-medium);
+}
+.title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
+
+.container {
+  max-width: calc(320 / 16 * 1rem);
+  padding: var(--padding-small);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--border-radius-small);
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-large);
+  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+}
+.qr-code {
+  max-width: 100%;
+  border-radius: var(--border-radius-small);
+}
+.text-box {
+  padding: var(--padding-small);
+}
+.card-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: var(--font-size-primary);
+  line-height: var(--line-height-primary);
+  color: var(--slate-900);
+  margin-bottom: var(--padding-small);
+}
+.instruction {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: var(--font-size-secondary);
+  line-height: var(--line-height-secondary);
+  letter-spacing: var(--letter-spacing-secondary);
+  color: var(--slate-500);
+  margin-bottom: calc(7 / 16 * 1rem);
+}
+
+.footer { 
+  font-size: var(--font-size-secondary); 
+  text-align: center; 
+}
+.footer a { 
+  color: var(--slate-500); 
+  text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    gap: calc(8 / 16 * 1rem);
+  }
+}
