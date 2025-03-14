@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('./fonts/Figtree-Light.woff2') format('woff2'),
+       url('./fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url('./fonts/Figtree-LightItalic.woff2') format('woff2'),
+       url('./fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url('./fonts/static/Figtree-ExtraBold.woff2') format('woff2'),
+       url('./fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url('./fonts/static/Figtree-Medium.woff2') format('woff2'),
+       url('./fonts/static/Figtree-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --font-family: 'Figtree', sans-serif;
+  --primery-color: #F4D04E;
+  --title-color: #111111;
+  --info-color: #6B6B6B;
+  --bg-card-color: #FFFFFF;
+  --font-size-primary: calc(24 / 16 * 1rem);
+  --font-size-primary-mobile: calc(20 / 16 * 1rem);
+  --font-size-secondary: calc(16 / 16 * 1rem);
+  --font-size-tertiary: calc(14 / 16 * 1rem);
+  --font-size-tertiary-mobile: calc(12 / 16 * 1rem);
+  --line-height-primary: 1.5;
+  --padding-large: calc(24 / 16 * 1rem);
+  --padding-medium: calc(12 / 16 * 1rem);
+  --padding-small: calc(8 / 16 * 1rem);
+  --padding-xsmall: calc(4 / 16 * 1rem);
+  --border-radius-large: calc(20 / 16 * 1rem);
+  --border-radius-small: calc(10 / 16 * 1rem);
+  --border-radius-xsmall: calc(4 / 16 * 1rem);
+  --card-shadow: 8px 8px 0 0 #000;
+  --xs-width: 320px;
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  font-family: var(--font-family);
+  line-height: var(--line-height-primary);
+  background-color: var(--primery-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-large);
+}
+.title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
+
+.card {
+  max-width: 384px;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24 / 16 * 1rem);
+  padding: var(--padding-large);
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius-large);
+  border: 1px solid var(--title-color);
+  box-shadow: var(--card-shadow);
+}
+.image-box {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--border-radius-small);
+  color: var(--primery-color);
+  background-image: url('./images/illustration-article.svg');
+  background-size: cover;
+  background-position: center;
+}
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+}
+.tag-btn {
+  align-self: flex-start;
+  border-radius: var(--border-radius-xsmall);
+  padding: var(--padding-xsmall) var(--padding-medium);
+  font-size: var(--font-size-tertiary-mobile);
+  font-weight: 800;
+  color: var(--title-color);
+  background-color: var(--primery-color);
+  outline: none;
+  border: none;
+}
+.card-date {
+  font-size: var(--font-size-tertiary-mobile);
+  font-weight: 500;
+  color: var(--title-color);
+}
+.card-title {
+  font-size: var(--font-size-primary-mobile);
+  font-weight: 800;
+  color: var(--title-color);
+  transition: color 0.3s ease-in-out;
+}
+@media (hover: hover) {
+  .card-title:hover {
+    color: var(--primery-color);
+    cursor: pointer;
+  }
+}
+.card-info {
+  font-size: var(--font-size-tertiary);
+  font-weight: 500;
+  color: var(--info-color);
+}
+.autor-box {
+  display: flex;
+  align-items: center;
+  gap: var(--padding-medium);
+}
+.autor-avatar {
+  max-width: calc(32 / 16 * 1rem);
+  border-radius: 50%;
+}
+.autor-name {
+  font-size: var(--font-size-tertiary);
+  font-weight: 800;
+  color: var(--title-color);
+}
+
+.footer { 
+  position: absolute;
+  bottom: 0;
+  font-size: var(--font-size-secondary); 
+  text-align: center; 
+}
+.footer a { 
+  color: var(--info-color); 
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .tag-btn {
+    font-size: var(--font-size-tertiary);
+  }
+  .card-date {
+    font-size: var(--font-size-tertiary);
+  }
+  .card-title {
+    font-size: var(--font-size-primary);
+  }
+  .card-info {
+    font-size: var(--font-size-secondary);
+  }
+}
