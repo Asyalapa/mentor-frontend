@@ -149,6 +149,7 @@ body {
 @media (hover) {
   .footer a:hover { 
     color: var(--active-color); 
+    text-decoration: underline;
   }
 }
 
