@@ -6,28 +6,30 @@ This is a solution to the [Product preview card component Solution challenge on 
 
 - [Live Demo](https://asyalapa.github.io/mentor-frontend/product-preview-card-component-main/)  
  
-
-### 🛠 Built with  
+## 🛠 Built with
 
 - **HTML**  
 - **CSS**  
-- **Sass**
 - **Flexbox**  
-- **Media queries (for hover effects and responsiveness)**  
-- **Google Fonts (imported)**
+- **Media queries**
+- **Google Fonts**
+- **Font Awesome (for icons)**
 
-### 📝 Development Steps  
+## 📝 Development Steps
 
-<!-- 1. Structured the **HTML** using **semantic elements**.
-2. Styled the layout using **Flexbox** for proper alignment.
-3. Imported fonts from **Google Fonts** for a clean and modern look.
-4. Used **media queries** to handle responsiveness and hover states.
-5. Since I don’t have access to the pro version, I **adjusted sizes** based on the provided JPG.
-6. Focused on **accessibility** by improving tab navigation and active states.
-7. Experimented with styling the parent `<li>` when the child `<a>` is **focused or active** but faced challenges. -->
+- **Desktop-first approach**: Designed the layout for larger screens initially, ensuring proper alignment and spacing using **Flexbox**.
+- Created a clean and semantic **HTML structure**, using tags like `<article>`, `<footer>`, and `<section>` to improve accessibility and readability.
+- Imported **Google Fonts** (Fraunces and Montserrat) for consistent typography across the design.
+- Styled the layout using **CSS variables** for colors, fonts, and dimensions to ensure consistency and maintainability.
+- Added **Font Awesome** via CDN to include the shopping cart icon in the `"Add to Cart"` button.
+- Implemented **media queries** to adapt the design for mobile devices and ensure responsiveness.
+- Validated the code using **HTML & CSS validators** for clean and error-free markup.
 
-### 🚀 Challenges & Learnings
-<!-- One of the most challenging parts was styling the parent `<li>` when the child `<a>` was in `:focus` or `:active` state. I explored different approaches, including `:focus-within` and `:has()`, to achieve the desired effect. If anyone has more insights or best practices, I'd love to learn more! -->
+## 🚀 Challenges & Learnings
+
+- Adapting the layout for mobile devices posed challenges, particularly ensuring the image and text stack properly while maintaining proportions.
+- Working with Font Awesome icons highlighted the importance of proper library integration and version compatibility.
+- This project reinforced the value of CSS variables , responsive design , and attention to detail in creating visually appealing and functional components.
 
 ## ✨ Author  
 
