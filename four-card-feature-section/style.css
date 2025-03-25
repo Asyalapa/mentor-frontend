@@ -218,7 +218,8 @@ body {
   text-decoration: none;
   text-shadow: 1px 1px 1px aquamarine;
 }
-.footer a:hover { 
+.footer a:hover,
+.footer a:focus { 
   color: var(--color-cyan); 
   text-decoration: underline;
   cursor: pointer;
