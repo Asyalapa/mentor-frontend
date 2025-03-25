@@ -216,6 +216,7 @@ body {
 .footer a { 
   color: var(--color-blue); 
   text-decoration: none;
+  text-shadow: 1px 1px 1px aquamarine;
 }
 .footer a:hover { 
   color: var(--color-cyan); 
